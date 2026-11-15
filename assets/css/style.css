@@ -1,0 +1,55 @@
+:root {
+    --navy: #0b2545;
+    --navy-2: #13315c;
+    --blue: #1d6fe8;
+    --blue-soft: #e8f0fd;
+    --bg: #f4f7fb;
+}
+body { background: var(--bg); color: #1f2937; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+
+/* Tombol & aksen */
+.btn-primary { background: var(--blue); border-color: var(--blue); }
+.btn-primary:hover { background: #155bc4; border-color: #155bc4; }
+.text-blue { color: var(--blue); }
+
+/* Navbar masyarakat */
+.navbar-laporin { background: var(--navy); }
+.navbar-laporin .navbar-brand, .navbar-laporin .nav-link { color: #fff; }
+.navbar-laporin .nav-link:hover { color: #9ec5ff; }
+.navbar-laporin .navbar-toggler { border-color: rgba(255,255,255,.4); filter: invert(1); }
+.footer-laporin { background: var(--navy); color: #cbd5e1; }
+
+/* Hero halaman utama */
+.hero { background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: #fff; border-radius: 1rem; padding: 4rem 2rem; }
+.hero p { color: #cbd5e1; max-width: 560px; }
+.feature-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 12px; background: var(--blue-soft); color: var(--blue); font-size: 1.5rem; }
+
+/* Kartu */
+.card { border: 0; border-radius: .9rem; box-shadow: 0 2px 12px rgba(11,37,69,.07); }
+.stat-card .angka { font-size: 2rem; font-weight: 700; color: var(--navy); }
+.stat-card .ikon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 12px; background: var(--blue-soft); color: var(--blue); font-size: 1.4rem; }
+
+/* Tabel */
+.table thead th { background: var(--blue-soft); color: var(--navy); border: 0; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; }
+.table td { vertical-align: middle; }
+
+/* Form login/registrasi */
+.auth-card { max-width: 440px; margin: 2rem auto; }
+
+/* Layout admin */
+.admin-wrap { display: flex; min-height: 100vh; }
+.sidebar { width: 240px; flex-shrink: 0; background: var(--navy); padding: 1.25rem 1rem; }
+.sidebar-brand { color: #fff; font-weight: 700; font-size: 1.3rem; text-decoration: none; display: block; margin-bottom: 1.5rem; }
+.sidebar .nav-link { color: #cbd5e1; border-radius: .5rem; padding: .6rem .8rem; margin-bottom: .2rem; }
+.sidebar .nav-link i { margin-right: .5rem; }
+.sidebar .nav-link:hover { background: var(--navy-2); color: #fff; }
+.sidebar .logout { color: #fca5a5; }
+.admin-main { flex: 1; min-width: 0; }
+.topbar { background: #fff; padding: .8rem 1.5rem; display: flex; align-items: center; gap: .75rem; box-shadow: 0 1px 6px rgba(11,37,69,.06); }
+.content { padding: 1.5rem; }
+
+@media (max-width: 991.98px) {
+    .admin-wrap { display: block; }
+    .sidebar { width: 100%; }
+}
+.foto-bukti { max-width: 100%; max-height: 360px; border-radius: .6rem; }

@@ -1,0 +1,9 @@
+# Foto bukti yang diunggah pengguna tidak ikut di-commit
+uploads/*
+!uploads/.gitkeep
+
+# File sistem / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
